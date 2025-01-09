@@ -255,3 +255,6 @@ var divv = document.getElementById("divv")
 toggleItems.addEventListener("click", function() {
     divv.hidden = !divv.hidden
 })
+buildPart.addEventListener("click", function() {
+    // Put code for building parts here
+})
