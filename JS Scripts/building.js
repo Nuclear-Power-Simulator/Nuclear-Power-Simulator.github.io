@@ -256,5 +256,12 @@ toggleItems.addEventListener("click", function() {
     divv.hidden = !divv.hidden
 })
 buildPart.addEventListener("click", function() {
-    // Put code for building parts here
+    if (parts.selectedIndex == 1) {
+        if (itemCounts[0] >= 1 && itemCounts[1] >= 1) {
+            itemCounts[0]--
+            itemCounts[1]--
+            updateItems()
+            items.innerHTML = itemsText
+        }
+    }
 })
