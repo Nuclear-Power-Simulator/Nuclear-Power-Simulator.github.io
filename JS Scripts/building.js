@@ -258,8 +258,8 @@ toggleItems.addEventListener("click", function() {
 buildPart.addEventListener("click", function() {
     if (parts.selectedIndex == 1) {
         if (itemCounts[0] >= 1 && itemCounts[1] >= 1) {
-            itemCounts[0]--
-            itemCounts[1]--
+            itemCounts[0] -= 1
+            itemCounts[1] -= 1
             updateItems()
             items.innerHTML = itemsText
         }
